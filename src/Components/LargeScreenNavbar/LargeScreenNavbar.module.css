@@ -50,6 +50,8 @@
     width: 200px;
     height: 50px;
     padding: 0;
+    margin-top: 10px;
+
 }
 
 .logoContainer img{
@@ -69,7 +71,7 @@
 
 .circle{
     position: fixed;
-    z-index: 200;
+    z-index: 180;
     top: 82%;
     left: 2%;
 }

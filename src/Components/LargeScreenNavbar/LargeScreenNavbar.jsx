@@ -22,7 +22,7 @@ function LargeScreenNavbar() {
   const Display = (loc && loc.length > 6) || !loc ? "none" : "";
   const display = loc && loc.length <= 6 ? "none" : "";
 
-  const [circleSize, setCircleSize] = useState(40);
+  const [circleSize, setCircleSize] = useState(35);
   const [cstyle, setCStyle] = useState(1400);
   const [curRentLo, setCurrentLoc] = useState(0);
 
@@ -108,7 +108,7 @@ function LargeScreenNavbar() {
     width: circleSize + "px",
     height: circleSize + "px",
     borderRadius: "50%",
-    border: "3px solid " + BC,
+    border: "1px solid " + BC,
     transition: "all 0.5s ease-out",
   };
 

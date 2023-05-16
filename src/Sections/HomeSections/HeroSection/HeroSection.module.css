@@ -74,4 +74,9 @@
     .HeroTitle{
         font-size: 1.8rem;
     }
+
+    .HeroBtn{
+        font-weight: 400;
+    }
+
 }

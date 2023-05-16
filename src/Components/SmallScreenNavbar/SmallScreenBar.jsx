@@ -37,7 +37,7 @@ function SmallScreenBar({Style,navColor}) {
       <span className={`${style.toggleCont} `}>
         <span className={style.toggleItem} onClick={respondToToggle}>
           {!showAndHideNav && <HiOutlineBars3  className={style.bars}/>}
-          {showAndHideNav && <GiTireIronCross className={style.bars} />}
+          {showAndHideNav && <GiTireIronCross className={style.cross} />}
         </span>
         <button className={style.NavBtn} onClick={respondToGetInTouch}>stay in touch</button>
       </span>
