@@ -19,8 +19,8 @@ function LargeScreenNavbar() {
 
   const match = location.pathname.split("/");
   const loc = match[match.length - 1];
-  const Display = (loc && loc.length > 6) || !loc ? "none" : "";
-  const display = loc && loc.length <= 6 ? "none" : "";
+  const Display = (loc && loc.length > 8) || !loc ? "none" : "";
+  const display = loc && loc.length <= 8 ? "none" : "";
 
   const [circleSize, setCircleSize] = useState(35);
   const [cstyle, setCStyle] = useState(1400);

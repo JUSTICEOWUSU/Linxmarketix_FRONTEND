@@ -132,7 +132,8 @@
 }
 
 .loc {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 400;
     margin-bottom: 0;
     text-transform: uppercase;
     padding-top: 0;
@@ -212,6 +213,10 @@
     .PP,
     .TOS{
         font-size: 13px;
+    }
+
+    .privacy{
+        font-size: 10px;
     }
    
 }

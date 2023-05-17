@@ -13,8 +13,7 @@ import ImageCard from "../../Components/ImageCard/ImageCard";
 import ServiceList from "../../Components/ServiceList/ServiceList";
 import Carousel from "../../Components/Carousel/Carousel";
 import BlackBanner from "../../Components/BlackBanner/BlackBanner";
-import Minicarousel from "../../Components/Carousel/Minicarousel";
-
+import {MiniCarousel} from "../../Components/Carousel/Carousel";
 const MissionIcon = <FaBattleNet className={`${style.icon} ${style.rotate}`} />;
 const WhatCanDoIcon = (
   <MdWorkspacesOutline className={`${style.icon} ${style.size} `} />
@@ -132,7 +131,6 @@ function About() {
             />
           </div>
 
-
           {/* on mobile */}
           <div className={`col-12 ${style.mobile}`}>
             <Card
@@ -183,46 +181,40 @@ function About() {
               "We believe the best lay at the intersection of intelligent marketing,,Accounting,design and strong engineering. Our leadership works continually to protect instill this vision in every process, project and team member "
             }
           />
-          <div className={`${style.picturesCont} row g-lg-4 g-1`}>
+          <div className={`${style.picturesCont} row g-lg-4 g-1 gy-sm-0`}>
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52835207222_0f344b0f18.jpg"}
-                name={"Haunting Hattie"}
+                name={"Whispering Hattie"}
                 title={"chief design officer & director of operations"}
               />
             </span>
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52835207247_0303ed57ce_w.jpg"}
-                name={"Whispering Willow"}
+                name={"Haunting Willow"}
                 title={"Accounting manager"}
               />
             </span>
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52836185990_de685877e1.jpg"}
-                name={"Moaning Marcus"}
+                name={"Wraithlike Marcus"}
                 title={"Chief software Architect"}
               />
             </span>
-            <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
-              <ImageCard
-                src={"https://live.staticflickr.com/65535/52836228033_3440a8d8c8_n.jpg"}
-                name={"Evelyn Nyamekeh"}
-                title={"vice President of Marketing"}
-              />
-            </span>
+            
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52835207207_6b9e4ce1e3.jpg"}
-                name={"Wraithlike Walter"}
+                name={"Moaning Walter"}
                 title={"EVP of sales & marketing"}
               />
             </span>
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52836227923_37152d50a0.jpg"}
-                name={"Banshee Bridgette"}
+                name={"Phantom Bridgette"}
                 title={"Lead mobile architect"}
               />
             </span>
@@ -230,8 +222,16 @@ function About() {
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
                 src={"https://live.staticflickr.com/65535/52835964094_b3a5e8b5e4_z.jpg"}
-                name={"Phantom Phillip"}
+                name={"Banshee Phillip"}
                 title={"Financial analyst"}
+              />
+            </span>
+
+            <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
+              <ImageCard
+                src={"https://live.staticflickr.com/65535/52836228033_3440a8d8c8_n.jpg"}
+                name={"Evelyn Nyamekeh"}
+                title={"vice President of Marketing"}
               />
             </span>
            
@@ -333,7 +333,7 @@ function About() {
       </div>
       <span className={style.sCa}>
       <h1>Recent Work</h1>
-      <Minicarousel />
+      <MiniCarousel />
       </span>
       
       

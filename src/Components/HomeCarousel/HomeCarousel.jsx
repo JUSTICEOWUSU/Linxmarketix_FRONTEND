@@ -10,7 +10,7 @@ function HomeCarousel({ images }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((currentImage + 1) % images.length);
-    }, 15000);
+    }, 17000);
     return () => clearInterval(interval);
   }, [currentImage, images]);
 

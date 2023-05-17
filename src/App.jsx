@@ -15,17 +15,11 @@ const GetInTouch= lazy(() => import('./Pages/GetInTouch/GetInTouch'));
 const Policy= lazy(() => import('./Pages/Policy/Policy'));
 const Terms= lazy(() => import('./Pages/Terms/Terms'));
 const Client = lazy(() => import('./Sections/HomeSections/Clients/Client'));
-// import LargeScreenNavbar from "./Components/LargeScreenNavbar/LargeScreenNavbar";
-// import Home from "./Pages/Home/Home";
-
-
 
 function Loading (){
   return(
     <div className={style.LContainer}>
-
       <div className={style.ldsRipple}><div></div><div></div></div>
-
     </div>
   )
 }
@@ -34,7 +28,6 @@ function App() {
 
   useEffect(() => {
     Aos.init({
-      duration: 2000
     })
   }, []);
 
