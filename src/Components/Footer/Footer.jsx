@@ -37,8 +37,6 @@ function Footer() {
           </span>
           <p className={Style.loc}>
             444 Alaska Avenue <br />
-            Suite #BRE383
-            <br />
             Torrance, CA 90503
             <br />
             USA
@@ -58,7 +56,7 @@ function Footer() {
             }}
           >
             <a
-              href=""
+              href="https://www.linkedin.com/linxmarketix"
               style={{
                 textDecoration: "none",
                 width: "40px",
@@ -75,7 +73,7 @@ function Footer() {
               />
             </a>
             <a
-              href=""
+              href="https://www.twitter.com/linxmarketix"
               style={{
                 textDecoration: "none",
                 width: "40px",
@@ -93,7 +91,7 @@ function Footer() {
               />
             </a>
             <a
-              href=""
+              href="https://www.facebook.com/linxmarketix"
               style={{
                 textDecoration: "none",
                 width: "40px",

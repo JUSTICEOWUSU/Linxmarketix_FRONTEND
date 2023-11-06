@@ -27,7 +27,7 @@ function SmallScreenBar({Style,navColor}) {
 
   return (
     <div  style = {Style} className={`${style.smallScreenBarCont} container-fluid`}>
-         <span className={style.logoContainer}>
+         <span className={style.logoContainer} onClick={()=>navigate("/")}>
           <img
             src={logoColor}
             alt="logo"

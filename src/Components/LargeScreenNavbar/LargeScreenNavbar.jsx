@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import style from "./LargeScreenNavbar.module.css";
 import SmallScreenBar from "../SmallScreenNavbar/SmallScreenBar";
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
@@ -16,7 +17,7 @@ import { useLocation } from "react-router-dom";
 // Main LargeScreen navigation bar
 function LargeScreenNavbar() {
   const location = useLocation();
-
+const navigate = useNavigate();
   const match = location.pathname.split("/");
   const loc = match[match.length - 1];
   const Display = (loc && loc.length > 8) || !loc ? "none" : "";
@@ -26,8 +27,6 @@ function LargeScreenNavbar() {
   const [cstyle, setCStyle] = useState(1400);
   const [curRentLo, setCurrentLoc] = useState(0);
 
-  // <img src="https://i.ibb.co/r3GvQpt/Futuristic-Modern-Black-and-White-Logo-250-100-px-1.png" alt="Futuristic-Modern-Black-and-White-Logo-250-100-px-1" border="0">
-{/* <img src="https://i.ibb.co/TPBz3Gw/Futuristic-Modern-Black-and-White-Logo-250-100-px.png" alt="Futuristic-Modern-Black-and-White-Logo-250-100-px" border="0"></img> */}
 
   let logoColor = "";
 
@@ -133,7 +132,7 @@ function LargeScreenNavbar() {
         style={navStyles}
         className={`${style.largeNavCont} container-fluid ${style[showAndHideNav]}`}
       >
-        <span className={style.logoContainer}>
+        <span className={style.logoContainer} onClick={()=>navigate("/")}>
           <img src={logoColor} alt="logo" border="0" />
         </span>
         <span

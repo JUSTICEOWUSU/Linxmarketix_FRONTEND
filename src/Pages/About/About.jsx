@@ -206,7 +206,7 @@ function About() {
             
             <span className={`col-lg-3 col-md-4 col-sm-6 col-6 ${style.card} `}>
               <ImageCard
-                src={"https://live.staticflickr.com/65535/52835207207_6b9e4ce1e3.jpg"}
+                src={"https://i.ibb.co/RSMxLNZ/business-concept-young-successful-businessman-posing-dark-background-copy-space-1258-383-removebg-pr.png"}
                 name={"Moaning Walter"}
                 title={"EVP of sales & marketing"}
               />
