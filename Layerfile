@@ -19,6 +19,6 @@ COPY . .
 
 RUN npm install
 
-RUN BACKGROUND vite
+RUN BACKGROUND npm run dev
 
 EXPOSE WEBSITE http://localhost:3000
