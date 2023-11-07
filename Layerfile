@@ -1,0 +1,24 @@
+# Set the image
+FROM vm/ubuntu:18.04
+
+MEMORY 2G
+
+# Install the latest Node.js
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource-archive-keyring.gpg
+RUN echo "deb [signed-by=/usr/share/keyrings/nodesource-archive-keyring.gpg] https://deb.nodesource.com/node_16.x focal main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+RUN echo "deb-src [signed-by=/usr/share/keyrings/nodesource-archive-keyring.gpg] https://deb.nodesource.com/node_16.x focal main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
+RUN sudo apt-get update
+RUN sudo apt-get install -y nodejs
+
+# Install the latest npm
+RUN sudo npm install -g npm@8
+
+ENV NODE_OPTIONS=--max-old-space-size=8192
+
+COPY . .
+
+RUN npm install
+
+RUN BACKGROUND npm start
+
+EXPOSE WEBSITE http://localhost:3000
